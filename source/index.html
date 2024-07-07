@@ -9,13 +9,42 @@
   </head>
 
   <body class="page-body">
+    <section class="hero" data-test="hero">
+      <header class="hero__header header">
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="#" width="100" height="20" alt="Логотип Supergym">
+        </a>
+        <a class="header__phone" href="tel:+88005555555">8 800 555-55-55</a>
+      </header>
+      <div class="hero__wrapper container">
+        <div class="hero__content">
+          <span class="hero__city">Омск</span>
+          <div class="hero__container">
+            <h1 class="hero__title">Фитнес центр</h1>
+            <p class="hero__description">
+              Тренажёрный зал
+              <br>
+              Групповые занятия
+              <br>
+              Кардио-зона
+            </p>
+          </div>
+          <button class="hero__buy-btn" type="button">Купить абонемент</button>
+        </div>
+        <picture>
+          <source media="(min-width: 1366px)" srcset="#" width="500" height="524">
+          <img src="#" width="324" height="390" alt="Тренер Supergym">
+        </picture>
+      </div>
+    </section>
     <!-- пример использования спрайта -->
+    <!--
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
+    -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
     <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
