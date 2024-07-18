@@ -2,3 +2,64 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+.advantages {
+  text-align: center;
+}
+
+.advantages__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.advantages__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advantages__item,
+.advantages__center {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.advantages__center {
+  background-color: #2b5dab;
+  color: white;
+}
+
+.advantages__number {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.advantages__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  .advantages__content {
+    max-width: 1200px;
+  }
+
+  .advantages__item,
+  .advantages__center {
+    flex: 1 1 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages__content {
+    display: block;
+  }
+
+  .advantages__item,
+  .advantages__center {
+    margin: 10px auto;
+    max-width: 80%;
+  }
+}

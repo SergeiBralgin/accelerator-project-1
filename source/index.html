@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="sass/style.scss" />
   </head>
 
   <body class="page-body">
     <section class="hero" data-test="hero">
       <header class="hero__header header">
         <a class="header__logo" href="#">
-          <img class="header__logo-img" src="#" width="100" height="20" alt="Логотип Supergym">
+          <img
+            class="header__logo-img"
+            src="#"
+            width="100"
+            height="20"
+            alt="Логотип Supergym"
+          />
         </a>
         <a class="header__phone" href="tel:+88005555555">8 800 555-55-55</a>
       </header>
@@ -23,20 +28,329 @@
             <h1 class="hero__title">Фитнес центр</h1>
             <p class="hero__description">
               Тренажёрный зал
-              <br>
+              <br />
               Групповые занятия
-              <br>
+              <br />
               Кардио-зона
             </p>
           </div>
           <button class="hero__buy-btn" type="button">Купить абонемент</button>
         </div>
         <picture>
-          <source media="(min-width: 1366px)" srcset="#" width="500" height="524">
-          <img src="#" width="324" height="390" alt="Тренер Supergym">
+          <source
+            media="(min-width: 1366px)"
+            srcset="#"
+            width="500"
+            height="524"
+          />
+          <img src="#" width="324" height="390" alt="Тренер Supergym" />
         </picture>
       </div>
     </section>
+    <section class="about" data-test="about">
+      <div class="about__wrapper container">
+        <div class="about__content">
+          <div class="about__intro">
+            <h2 class="about__title">Тренадерный зал</h2>
+            <span class="">Просторный зал площадью 900 кв/м</span>
+          </div>
+          <p class="about__description">
+            Supergym – самый большой фитнес центр за Уралом и идеальное место
+            для укрепления тела и здоровья. Тренажёрный зал оснащён всем
+            необходимым современным оборудованием для всех спортсменов.
+          </p>
+        </div>
+        <!-- Добавить класс при необходимость, src, и правильные размеры  для всех устройств -->
+        <picture>
+          <source media="min-width: 768px" srcset="#" width="" height="" />
+          <img src="#" width="" height="" alt="Тренажерный зал" />
+        </picture>
+        <!-- Добавить ленивую подгрузку видио -->
+      </div>
+    </section>
+    <section class="price" data-test="price">
+      <div class="price__wrapper container">
+        <h2 class="price__title">Абонементы</h2>
+        <ol class="price__tabs tabs">
+          <li class="tabs__item">
+            <button class="tabs__button">1 месяц</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__button">6 месяцев</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__button">12 месяцев</button>
+          </li>
+        </ol>
+        <ul class="price__list">
+          <li class="price__list-item card">
+            <h3 class="card__title">С тренером</h3>
+            <p class="card__advantages">12 посещений</p>
+            <div class="card__container">
+              <p class="card__price">5000</p>
+              <span class="card__price-shadow">5000</span>
+            </div>
+            <button class="card__button-buy">Купить абонемент</button>
+          </li>
+          <li class="price__list-item card">
+            <h3 class="card__title">Дневной</h3>
+            <p class="card__advantages">с 8:00 до 17:00</p>
+            <div class="card__container">
+              <p class="card__price">1700</p>
+              <span class="card__price-shadow">1700</span>
+            </div>
+            <button class="card__button-buy">Купить абонемент</button>
+          </li>
+          <li class="price__list-item card">
+            <h3 class="card__title">Полный день</h3>
+            <p class="card__advantages">с 8:00 до 22:00</p>
+            <div class="card__container">
+              <p class="card__price">2700</p>
+              <span class="card__price-shadow">2700</span>
+            </div>
+            <button class="card__button-buy">Купить абонемент</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="games" data-test="games">
+      <div class="games__wrapper container">
+        <div class="games__content">
+          <h2 class="games__title">Super games</h2>
+          <div class="games__data">
+            <div class="games__item">
+              <p class="games__item-heading">Дата</p>
+              <div class="games__item-value">
+                <span class="games__item-day">7</span>
+                <p class="games__item-info">
+                  Марта <br />
+                  2019
+                </p>
+              </div>
+            </div>
+            <div class="games__item">
+              <p class="games__item-heading">Время</p>
+              <span class="games__item-value">12:00</span>
+            </div>
+          </div>
+          <p class="games__description">Ежегодные соревнования по CrossFit</p>
+          <button class="games__button-submit"></button>
+        </div>
+        <!-- Добавить класс при необходимость, src, и правильные размеры  для всех устройств -->
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="#"
+            width="378"
+            height="348"
+          />
+          <img
+            class="games__img"
+            src="#"
+            width="290"
+            height="290"
+            alt="Превью соревнований"
+          />
+        </picture>
+      </div>
+    </section>
+    <section class="juri">
+      <div class="juri__wrapper container">
+        <h2 class="juri__title">Жюри</h2>
+        <div class="juri__slider juri-swiper swiper">
+          <ul class="juri-swiper__wrapper juri-swiper swiper-wrapper">
+            <li class="juri-swiper__item">
+              <!-- Вставить картинки жюри -->
+              <picture></picture>
+              <h3 class="juri-swiper__name">Анна Павлова</h3>
+            </li>
+            <li class="juri-swiper__item">
+              <!-- Вставить картинки жюри -->
+              <picture></picture>
+              <h3 class="juri-swiper__name">Алексей Лавров</h3>
+            </li>
+            <li class="juri-swiper__item">
+              <!-- Вставить картинки жюри -->
+              <picture></picture>
+              <h3 class="juri-swiper__name">Александр Пашков</h3>
+            </li>
+            <li class="juri-swiper__item">
+              <!-- Вставить картинки жюри -->
+              <picture></picture>
+              <h3 class="juri-swiper__name">Мария Кетова</h3>
+            </li>
+            <li class="juri-swiper__item">
+              <!-- Вставить картинки жюри -->
+              <picture></picture>
+              <h3 class="juri-swiper__name">Анна</h3>
+            </li>
+            <li class="juri-swiper__item">
+              <!-- Вставить картинки жюри -->
+              <picture></picture>
+              <h3 class="juri-swiper__name">Анна</h3>
+            </li>
+            <li class="juri-swiper__item">
+              <!-- Вставить картинки жюри -->
+              <picture></picture>
+              <h3 class="juri-swiper__name">Анна</h3>
+            </li>
+            <li class="juri-swiper__item">
+              <!-- Вставить картинки жюри -->
+              <picture></picture>
+              <h3 class="juri-swiper__name">Анна</h3>
+            </li>
+          </ul>
+          <div class="juri-swiper__navigation">
+            <button
+              class="juri-swiper__navigation-btn juri-swiper__navigation-btn--prev swiper-button-prev"
+            ></button>
+            <button
+              class="juri-swiper__navigation-btn juri-swiper__navigation-btn--next swiper-button-next"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features" data-test="features">
+      <div class="features__wrapper container">
+        <h2 class="features__title">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__conteiner-number">
+              <span>900</span>
+              <p>кв/м</p>
+            </div>
+            <div class="features__conteiner-content">
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей и толкучки</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <div class="features__conteiner-number">
+              <span>70</span>
+              <p>машин</p>
+            </div>
+            <div class="features__conteiner-content">
+              <h3>Собственная парковка</h3>
+              <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
+            </div>
+          </li>
+          <li class="features__unique">
+            <span>100</span>
+            <h3>Тренажёров</h3>
+            <p>Современные тренажёры на все группы мышц</p>
+          </li>
+          <li class="features__item">
+            <div class="features__conteiner-number">
+              <span>350</span>
+              <p>мест</p>
+            </div>
+            <div class="features__conteiner-content">
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </li>
+          <li class="features__item">
+            <div class="features__conteiner-number">
+              <span>5+</span>
+              <p>лет</p>
+            </div>
+            <div class="features__conteiner-content">
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="offers" data-test="offers">
+      <div class="offers__wrapper container">
+        <h2 class="offers__title">Акции</h2>
+        <div class="offers__info">
+          <div class="offers__content">
+            <p class="offer__period">Год</p>
+            <span class="offers__price">4999</span>
+            <p class="offers__advantages">
+              Безлимитный абонемент в тренажёрный зал
+            </p>
+            <a class="offers__link" href="#">Подробнее</a>
+          </div>
+          <picture></picture>
+        </div>
+        <ul class="offers__list">
+          <li class="offer__item">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <a href="#">Подробнее</a>
+          </li>
+          <li class="offers__item">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес с командой</p>
+            <a href="#">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="faq" data-test="faq">
+      <div class="faq__wrapper container">
+        <h2 class="faq__title">Вопросы и ответы</h2>
+        <ol class="faq__tabs tabs">
+          <li class="tabs__item">
+            <button class="tabs__btn">Центр</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__btn">Абонемент</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__btn">Услуги</button>
+          </li>
+          <li class="tabs__item">
+            <button class="tabs__btn">Правила</button>
+          </li>
+        </ol>
+        <!-- Добавить все оставшиеся аккордеоны -->
+        <ul class="faq__accordions accordions">
+          <li class="accordions__item">
+            <h3>Как стать членом фитнес-центра?</h3>
+            <p>
+              При первом посещении и покупке абонемента, необходимо заполнить
+              анкету и подписать договор. При покупке абонемента онлайн, анкета
+              также заполняется онлайн и договор придёт вам на почту.
+            </p>
+            <button class="accordions__btn">Показать ответ на вопрос</button>
+          </li>
+          <li class="accordions__item">
+            <h3>Где можно посмотреть расписание?</h3>
+            <p>
+              Вы можете ознакомиться с расписание на стойке информации, на нашем
+              официальном сайте. Так же есть возможность оформить подписку на
+              наши новости и получать расписание и обновления на почту каждую
+              неделю.
+            </p>
+            <button class="accordions__btn">Показать ответ на вопрос</button>
+          </li>
+          <li class="accordions__item">
+            <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+            <p>
+              При первом посещении и покупке абонемента, необходимо заполнить
+              анкету и подписать договор. При покупке абонемента онлайн, анкета
+              также заполняется онлайн и договор придёт вам на почту.
+            </p>
+            <button class="accordions__btn">Показать ответ на вопрос</button>
+          </li>
+          <li class="accordions__item">
+            <h3>Как стать членом фитнес-центра?</h3>
+            <p>
+              При первом посещении и покупке абонемента, необходимо заполнить
+              анкету и подписать договор. При покупке абонемента онлайн, анкета
+              также заполняется онлайн и договор придёт вам на почту.
+            </p>
+            <button class="accordions__btn">Показать ответ на вопрос</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews" data-test="reviews"></section>
     <!-- пример использования спрайта -->
     <!--
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
@@ -45,17 +359,9 @@
     </svg>
     -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>
