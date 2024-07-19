@@ -9,13 +9,13 @@
 
   <body class="page-body">
     <section class="hero" data-test="hero">
-      <header class="hero__header header">
-        <a class="header__logo" href="#">
-          <img class="header__logo-img" src="#" width="100" height="20" alt="Логотип Supergym">
-        </a>
-        <a class="header__phone" href="tel:+88005555555">8 800 555-55-55</a>
-      </header>
       <div class="hero__wrapper container">
+        <header class="hero__header header">
+          <a class="header__logo" href="#">
+            <img class="header__logo-img" src="#" width="100" height="20" alt="Логотип Supergym">
+          </a>
+          <a class="header__phone" href="tel:+88005555555">8 800 555-55-55</a>
+        </header>
         <div class="hero__content">
           <span class="hero__city">Омск</span>
           <div class="hero__container">
@@ -40,7 +40,7 @@
       <div class="about__wrapper container">
         <div class="about__content">
           <div class="about__intro">
-            <h2 class="about__title">Тренадерный зал</h2>
+            <h2 class="about__title">Тренажёрный зал</h2>
             <span class="">Просторный зал площадью 900 кв/м</span>
           </div>
           <p class="about__description">
@@ -358,15 +358,18 @@
     </section>
     <div class="container" data-test="form">
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="form__title">Бесплатное занятие</h2>
-        <fieldset class="form__data">
-          <label class="visually-hidden">Имя</label>
-          <input class="form__data-input" type="text" name="name" id="name" placeholder="Имя" required>
-          <label class="visually-hidden">Телефон</label>
-          <input class="form__data-input" type="text" name="phone" id="phone"
-            placeholder="Телефон" required>
-        </fieldset>
-        <button class="form__btn" type="submit">Отправить</button>
+        <div class="form__wrapper container container--form">
+          <h2 class="form__title">Бесплатное занятие</h2>
+          <fieldset class="form__data">
+            <label class="visually-hidden">Имя</label>
+            <input class="form__data-input" type="text" name="name" id="name" placeholder="Имя"
+              required>
+            <label class="visually-hidden">Телефон</label>
+            <input class="form__data-input" type="text" name="phone" id="phone"
+              placeholder="Телефон" required>
+          </fieldset>
+          <button class="form__btn" type="submit">Отправить</button>
+        </div>
       </form>
       <section class="contacts">
         <div class="contacts__wrapper container">
