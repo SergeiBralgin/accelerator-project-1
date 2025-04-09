@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: $width-mobile;
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  font-style: normal;
+  color: $color-primary;
+  background-color: $color-light;
+}
+
+@media (min-width: $width-desktop) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

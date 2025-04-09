@@ -1,0 +1,60 @@
+.socials-list {
+  @include reset-list;
+
+  display: flex;
+  gap: 20px;
+  margin: 28px 0 0;
+}
+
+.socials-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-light;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: #030a1a;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: #74819c;
+    color: $color-light;
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: $color-additional;
+    color: $color-light;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-primary;
+    color: $color-light;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .socials-list {
+    gap: 15px;
+    margin: 0;
+  }
+
+  .socials-list__icon--ok {
+    padding: 0 0 0 1px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .socials-list {
+    gap: 10px;
+
+    // margin: 0px 0 1px 0;
+  }
+}

@@ -1,0 +1,108 @@
+.accordion summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-primary;
+  margin: 0;
+}
+
+.accordion[open] div{
+  padding: 20px 52px 0 0;
+}
+
+.faq__accordion p {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $color-primary;
+  margin: 0;
+}
+
+.faq__accordion span {
+  position: relative;
+  display: block;
+  background-color: transparent;
+  border: 1px solid $color-dark;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &::after {
+    content: "";
+    min-width: 12.5px;
+    height: 1px;
+    background-color: $color-dark;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+  }
+
+  &::before {
+    content: "";
+    min-width: 1px;
+    height: 12.5px;
+    background-color: $color-dark;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+//
+//  &:hover {
+//    background-color: $color-dark;
+//
+//    &::after {
+//      background-color: $color-light;
+//    }
+//
+//    &::before {
+//      background-color: $color-light;
+//    }
+//  }
+//
+//  &:focus,
+//  &:focus-visible {
+//    border: 1px solid $color-dark;
+//    background-color: #74819c;
+//    outline: none;
+//
+//    &::after {
+//      background-color: $color-light;
+//    }
+//
+//    &::before {
+//      background-color: $color-light;
+//    }
+//  }
+//
+//  &:disabled {
+//    opacity: 0.3;
+//    pointer-events: none;
+//  }
+}
+//
+//.faq__accordion--active button {
+//  background-color: $color-dark;
+//
+//  &::after {
+//    background-color: $color-light;
+//  }
+//
+//  &::before {
+//    transform: translate(-50%, -50%) rotate(90deg);
+//  }
+//}

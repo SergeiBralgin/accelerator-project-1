@@ -1,0 +1,274 @@
+.offers__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.offers__container {
+  margin: 40px 0 0;
+}
+
+.offers__content {
+  min-width: 100vw;
+  min-height: 271px;
+  background-color: #ed0233;
+  padding: 30px;
+  margin: 0 0 0 -15px;
+  color: $color-light;
+}
+
+.offers__period {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.offers__price {
+  display: block;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  margin: 9px 0 0;
+}
+
+.offers__description {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 28px 0 0;
+}
+
+.offers__link {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  max-width: max-content;
+  text-transform: uppercase;
+  margin: 29px auto 0;
+  padding: 0 0 4px;
+  border-bottom: 1px solid $color-light;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:focus-visible {
+    padding: 0;
+    border: none;
+    outline: 1px solid $color-light;
+    outline-offset: 10px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.offers__img {
+  width: 100vw;
+  height: auto;
+  margin: 0 0 0 -15px;
+}
+
+.offers__cards {
+  @include reset-list;
+
+  margin: 33px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.offers__card {
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 7;
+  border-style: solid;
+  border-width: 7px;
+  padding: 21px 20px 20px;
+}
+
+.offers__card h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $color-dark;
+  margin: 0;
+}
+
+.offers__card p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 20px 0 0;
+}
+
+.offers__card a {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  max-width: max-content;
+  text-transform: uppercase;
+  padding: 0 0 4px;
+  border-bottom: 1px solid $color-dark;
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:focus-visible {
+    padding: 0;
+    border: none;
+    outline: 1px solid $color-primary;
+    outline-offset: 10px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .offers__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: start;
+  }
+
+  .offers__title {
+    display: block;
+    text-align: center;
+  }
+
+  .offers__container {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 0;
+    max-height: 462px;
+  }
+
+  .offers__content {
+    min-width: auto;
+    padding: 40px 25px;
+    margin: 0;
+  }
+
+  .offers__period {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .offers__price {
+    font-size: 70px;
+    line-height: 70px;
+    margin: 20px 0 0;
+  }
+
+  .offers__description {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 40px 0 0;
+  }
+
+  .offers__link {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 161px 0 0;
+  }
+
+  .offers__img {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .offers__cards {
+    margin: 35px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 188px;
+    gap: 30px;
+  }
+
+  .offers__card {
+    border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 7;
+    border-style: solid;
+    border-width: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .offers__card h3 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .offers__card p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0 0;
+  }
+
+  .offers__card a {
+    margin: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .offers__wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .offers__title {
+    text-align: center;
+  }
+
+  .offers__info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    margin: 70px 0 0;
+  }
+
+  .offers__container {
+    margin: 0;
+    max-height: 460px;
+  }
+
+  .offers__content {
+    padding: 40px 45px;
+    max-width: 280px;
+  }
+
+  .offers__period {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .offers__link {
+    margin: 156px 0 0;
+  }
+
+  .offers__cards {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 560px;
+    grid-template-rows: repeat(2, 174px);
+    gap: 30px;
+  }
+}

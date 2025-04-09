@@ -1,0 +1,27 @@
+.footer {
+  background-color: #000000;
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $width-tablet) {
+  .footer__wrapper {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .footer__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

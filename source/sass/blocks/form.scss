@@ -1,0 +1,102 @@
+.form {
+  min-width: 100%;
+  background-color: $color-primary;
+}
+
+.form__wrapper {
+  padding: 71px 15px 70px;
+  text-align: start;
+}
+
+.form__container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form__data {
+  @include reset-fieldset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 36px 0 0;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid #74819c;
+  color: $color-light;
+  padding: 0 0 3px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 22px;
+
+  &::placeholder {
+    color: #74819c;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $color-light;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border: 1px solid $color-light;
+    padding: 10px 4px;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  &--phone {
+    padding: 0 0 4px;
+  }
+}
+
+.form__btn {
+  margin: 36px 0 0;
+  min-width: 100%;
+  min-height: 60px;
+}
+
+@media (min-width: $width-tablet) {
+  .form__wrapper {
+    padding: 60px 164px;
+    text-align: start;
+  }
+
+  .form__title {
+    text-align: center;
+  }
+
+  .form__data {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .form__input {
+    padding: 1px 0 3px;
+  }
+
+  .form__btn {
+    margin: 35px 0 0;
+    min-height: 66px;
+    padding: 2px 0 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .form__wrapper {
+    padding: 60px 103px;
+  }
+
+  .form__title {
+    text-align: start;
+  }
+}

@@ -1,0 +1,63 @@
+.header__wrapper {
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__phone {
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  color: $color-light;
+  letter-spacing: 0.07px;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: rgba($color: #1c3374, $alpha: 0.5);
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-dark;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+    padding: 0 0 6px;
+  }
+
+  &:disabled {
+    color: $color-light-secondary;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .header__wrapper {
+    padding-bottom: 30px;
+  }
+
+  .header__logo {
+    padding-top: 1px;
+  }
+
+  .header__phone {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.03px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .header__logo {
+    padding-top: 0;
+  }
+
+  .header__phone {
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 2px;
+  }
+}

@@ -1,0 +1,52 @@
+.site-nav {
+  @include reset-list;
+
+  display: flex;
+  gap: 18px 36px;
+  flex-wrap: wrap;
+  margin: 30px 0 0;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-light;
+  letter-spacing: 0.13px;
+  transition: 0.3s ease;
+
+  &:hover {
+    border-bottom: 1px solid $color-light;
+    padding: 0 0 4px;
+  }
+
+  &:focus,
+  &:focus-visible {
+    padding: 5px 10px;
+    border: 1px solid $color-light;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .site-nav {
+    justify-content: space-between;
+    gap: 0 31px;
+    margin: 1px 1px 0 0;
+  }
+
+  .site-nav__link {
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .site-nav {
+    gap: 0 83px;
+  }
+}
